@@ -122,6 +122,9 @@ This process is also called tagging the image.
 ### Dokcer run -p [Port_onMachine]:[Port_onContainer] [ContainerID]
 Docker command for port forwarding to use in node js
 
+### Docker logs [Container ID]
+For logs regarding a container
+
 ## How to create a image
 ---
 - Create a folder for image and inside that you can create a `Dockerfile`.
