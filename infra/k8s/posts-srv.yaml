@@ -9,5 +9,5 @@ spec:
   ports:
     - name: posts
       protocol: TCP
-      port: 80      # Port we are forwarding to 
-      targetPort: 4000        # Port that is node js using (index.js)
+      port: 4000  # Port we are forwarding to
+      targetPort: 4000  # Port that node js is using (index.js)

@@ -14,5 +14,17 @@ spec:
     spec:
       containers:
         - name: posts
-          image: codex/posts  # (just specifying version for testing)
-          # image: codex/posts:0.0.2  # (just specifying version for testing)
+          image: codex4747/posts
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: posts-clusterip-srv
+spec:
+  selector:
+    app: posts
+  ports:
+    - name: posts
+      protocol: TCP
+      port: 4000
+      targetPort: 4000
