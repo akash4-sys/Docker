@@ -1,0 +1,16 @@
+node_modules
+client/node_modules
+event_bus/node_modules
+moderation/node_modules
+posts/node_modules
+query/node_modules
+comments/node_modules
+
+package-lock.json
+
+client/package-lock.json
+event_bus/package-lock.json
+moderation/package-lock.json
+posts/package-lock.json
+query/package-lock.json
+comments/package-lock.json

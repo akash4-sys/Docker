@@ -1,0 +1,24 @@
+{
+  "name": "minimicroserviceapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runCommandOnNewTab":" wt -w 0 nt ping learn.microsoft.com",
+    "client":"wt -w 0 nt && npm start --prefix client",
+    "comments":"wt -w 0 nt && npm start --prefix comments",
+    "posts":"wt -w 0 nt && npm start --prefix posts",
+    "abus":"wt -w 0 nt && npm start --prefix event-bus",
+    "bus":"npm start --prefix event-bus",
+    "nstart": "npm run client && npm run comments && npm run bus && npm run posts",
+    "server": "npm run comments && npm run bus && npm run posts",
+    "sserver": "concurrently \"npm start --prefix comments\" \"npm run bus\" \"npm start --prefix posts\"",
+    "start": "concurrently \"npm start --prefix client\" \"npm start --prefix comments\" \"npm run bus\" \"npm start --prefix posts\" \"npm start --prefix query\" \"npm start --prefix moderation\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
