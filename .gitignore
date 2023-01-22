@@ -14,3 +14,6 @@ moderation/package-lock.json
 posts/package-lock.json
 query/package-lock.json
 comments/package-lock.json
+
+
+.kpt-pipelne

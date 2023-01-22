@@ -41,5 +41,6 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
+  console.log("skaffold running");
   console.log("Listening on 4000");
 });
