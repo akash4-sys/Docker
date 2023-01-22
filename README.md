@@ -9,25 +9,20 @@ Kubernetes creates a service (here service is not something like microservice, p
 container.
 
 ## Kubernetes Cluster
------
 A collections of nodes and a master to manage them.
 
 ## Node
------
 A virtual machine that will run our contatiners.
 
 ## Pod
------
 More or less a running container. Technically, a pod can run multiple
 containers.
 
 ## Deployment
------
 Monitors a set of pods, make sure they are running and restart them if they crash. 
 Deployment can automatically recreate a pod if it's deleted accidently.
 
 ## Service
------
 Provides an easy-to-remember URL to access a running container. Connects different pods or containers.
 
 ## Config file
@@ -53,13 +48,11 @@ spec:
 ```
 
 ## Commands
------
 Some commands that can be used for kubernetes.
 
 *Every kubernetes command starts kubectl which can be little annoying to type. So you can setup a custom alias on your system to refer to kubectl.*
 
 ### kubectl version
------
 shows the version of kubernetes version we are using.
 
 ### To get list of all pods running inside kubectl
@@ -97,7 +90,6 @@ To show all the services
 Show detailed information about the services
 
 ## Updating the image by deployment
-----
 When small changes are made to config.yaml file it will not necessarily
 recreate the deployment, it can also update the deployment as well.
 
@@ -129,7 +121,6 @@ So to make sure routing works in ingress try to use paths that are just differen
 Ingress doesn't support query parameters in the url
 
 ## Overriding system network driver
----
 With kubernetes we are not limited to hosting single application, we can host tons of different infrastructure inside a single kubernetes cluster
 and ingess-nginx is setup assuming that you might be hosting at different domains.
 You can check the host in *ingress-srv.yaml* file.
